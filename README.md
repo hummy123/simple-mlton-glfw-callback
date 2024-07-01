@@ -26,3 +26,7 @@ The following steps were taken to define and set the callback in code:
   - Line 18 declares the implementation for this exported function
   - Line 21 imports the `setKeyCallback` from `glfw-export.c` and declares it as `reentrant`.
     - The reentrant attribute is important and means that the C function imported calls an SML function that was exported to C
+
+- In shell.sml:
+  - After creating a window, call `Glfw.setKeyCallback window` to actually register the callback with GLFW at runtime.
+    - Without this, GLFW wouldn't know about the callback and won't execute it.
