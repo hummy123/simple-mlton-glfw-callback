@@ -4,13 +4,15 @@ This is a working example of setting a GLFW key callback with MLton.
 
 ## Building the program
 
-For a Linux/BSD machine: 
+You must first have GLFW, pkg-config and the MLton compiler installed on your computer to build this program.
+
+Once those are installed, building on a Linux/BSD machine is simple with the following steps:
 
 - Clone this repository
 - Enter `./build-unix.sh` in a terminal open at the repository root
-- `./shell` to executed the generated file
+- `./shell` to executed the compiled program
 
-## How the callback is set
+## How the callback is set in code
 
 The following steps were taken to define and set the callback in code:
 
