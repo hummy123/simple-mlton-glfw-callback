@@ -1,6 +1,6 @@
 structure Glfw =
 struct
-  type window = Word32.word
+  type window = MLton.Pointer.t
 
   (* GLFW functions. *)
   val init = _import "init" public : unit -> unit;
